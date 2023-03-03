@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Outfit:wght@400;700&family=Prompt:wght@600&display=swap');
 
+@font-face {
+    src: url(./font/TT\ Alientz\ Trial\ Var.ttf);
+    font-family: souptik;
+
+}
+
 *,
 *::before,
 *::after {
@@ -10,9 +16,9 @@
 
 body {
     font-family: "Lato", sans-serif;
-    background-color: #c6e377;
+    background-color: #ccc2c2;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     /* padding: 3rem; */
@@ -23,7 +29,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #fbfad3;
+    background-color: #c9a7a7;
     padding: 1rem 1.5rem;
     /* border-radius: 0.4rem; */
     font-family: 'Prompt', sans-serif;
@@ -72,10 +78,11 @@ nav label {
 
 .wrapper {
     width: 100%;
+    height: 100px;
     /* max-width: 1000px; */
     margin: 0 auto;
     /* padding: 20px; */
-    box-shadow: 0 5px 5px -5px #333;
+    box-shadow: 0 5px 5px -5px #0f0b0b;
 }
 
 @media (max-width: 40.625em) {
@@ -103,12 +110,15 @@ nav label {
         height: 100%;
         color: rgb(0, 0, 0);
     }
-    .menu-icons img{
+
+    .menu-icons img {
         width: 50px;
     }
-    .menu-icons{
+
+    .menu-icons {
         width: 50px;
     }
+
     .logbtn {
         margin-right: 77px;
     }
@@ -122,10 +132,10 @@ nav label {
     margin-left: 100px;
 }
 
-button {
+.btn {
     padding: 10px 30px;
     position: relative;
-    border: 3px solid #36622b;
+    border: 3px solid #0d7377;
     background-color: transparent;
     z-index: 1;
     font-weight: 700;
@@ -133,7 +143,7 @@ button {
 
 }
 
-button::before {
+.btn::before {
     content: '';
     height: 101%;
     width: 0%;
@@ -141,13 +151,217 @@ button::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #c6e377;
+    background-color: #14ffec;
     transition: all ease 0.5s;
     z-index: -1;
 }
 
-button:hover::before {
+.btn:hover::before {
     width: 101%;
+}
+
+.part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pt11 {
+    width: 50%;
+    /* border: 1px solid teal; */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+
+.pt11 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: souptik;
+}
+
+.pt11 p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: souptik;
+}
+
+.ptb11 {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.pt12 {
+    width: 50%;
+    /* border: 1px solid rgb(56, 173, 72); */
+    padding: 100px;
+}
+
+.pt12 img {
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#parth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: souptik;
+    font-size: 40px;
+}
+
+#partp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: souptik;
+}
+
+.it {
+    display: flex;
+}
+
+.it2 {
+    display: flex;
+}
+
+.itt {
+    margin: 60px;
+    width: 33%;
+    border-radius: 18px;
+    background-color: #c9a7a7;
+}
+
+.itt:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.itti img {
+    width: 100%;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.itti h1 {
+    font-family: souptik;
+    font-size: 20px;
+    /* margin-top: 5px; */
+    padding: 10px;
+}
+
+.itti button {
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.699);
+    margin: 10px 33px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: souptik;
+}
+
+.itti li {
+    padding: 10px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
 }
 
 /* fbfad3 */
